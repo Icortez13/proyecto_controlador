@@ -32,7 +32,7 @@ export const createFlight = async (req, res) => {
             airline,
             capacity,
             state
-        })
+        });
         const flightSaved = await newFlight.save();
         res.json({
             id: flightSaved._id,
